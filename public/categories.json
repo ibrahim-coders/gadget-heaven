@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "category": "Computer",
+    "product": "desktop_computer"
+  },
+  {
+    "id": 2,
+    "category": "Laptop",
+    "product": "laptop"
+  },
+  {
+    "id": 3,
+    "category": "phone",
+    "product": "smartphone"
+  },
+  {
+    "id": 4,
+    "category": "Smart  Watch",
+    "product": "fitness_smartwatch"
+  },
+  {
+    "id": 5,
+    "category": "Charger",
+    "product": "USB charger"
+  },
+  {
+    "id": 6,
+    "category": "Power Bank",
+    "product": "portable power bank"
+  }
+]

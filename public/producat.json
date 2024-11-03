@@ -1,0 +1,137 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co/wgWhLKM/51ukd1g6-Od-L-AC-UL480-FMwebp-QL65.webp",
+    "category": "Laptop",
+    "price": 1200,
+    "description": "13-inch laptop with an InfinityEdge display, offering a powerful performance.",
+    "specification": [
+      "13.3-inch FHD",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "iPhone 14",
+    "product_image": "https://i.ibb.co/wCyhDWn/Space-Black-c0e29643-01d8-44d4-a156-2c43cf180823.webp",
+    "category": "Phone",
+    "price": 999,
+    "description": "Latest iPhone with advanced features and improved camera system.",
+    "specification": ["6.1-inch OLED", "A15 Bionic chip", "128GB storage"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 3,
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://i.ibb.co/tJjsSYH/sa-en-galaxy-watch5-44mm-sm-r910nzaamea-533187366.png",
+    "category": "Smart Watch",
+    "price": 300,
+    "description": "Stylish smartwatch with advanced health tracking and fitness features.",
+    "specification": [
+      "1.4-inch AMOLED",
+      "GPS",
+      "Water resistant",
+      "Heart rate monitor"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "Anker PowerCore 10000",
+    "product_image": "https://i.ibb.co/WDKhk2Q/66927461013d61dc110c3f79ad6ec910-hi.jpg",
+    "category": "Power Bank",
+    "price": 25,
+    "description": "Compact and lightweight 10000mAh portable charger for all your devices.",
+    "specification": ["10000mAh", "USB-A output", "Fast charging"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 5,
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://i.ibb.co/MhkT3cw/GFXS8814-JPEG-blog-1.jpg",
+    "category": "Laptop",
+    "price": 1300,
+    "description": "Thin and light laptop powered by the new M2 chip, offering excellent performance.",
+    "specification": ["13.6-inch Retina", "Apple M2", "8GB RAM", "256GB SSD"],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "product_id": 6,
+    "product_title": "Samsung Galaxy S22",
+    "product_image": "https://i.ibb.co/H4X4SS8/Bora-Purple-785x.webp",
+    "category": "Phone",
+    "price": 850,
+    "description": "Flagship Android phone with an excellent display and powerful performance.",
+    "specification": ["6.1-inch AMOLED", "Snapdragon 8 Gen 1", "128GB storage"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 7,
+    "product_title": "Fitbit Versa 3",
+    "product_image": "https://i.ibb.co/THRytPr/images.jpg",
+    "category": "Smart Watch",
+    "price": 229,
+    "description": "Advanced smartwatch with built-in GPS, heart rate monitoring, and voice assistant.",
+    "specification": [
+      "1.58-inch AMOLED",
+      "GPS",
+      "Heart rate monitor",
+      "Sleep tracking"
+    ],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": 8,
+    "product_title": "Sony WH-1000XM4",
+    "product_image": "https://i.ibb.co/dLZ8Lt0/fitbit-versa-3-smart-watch-500x500.webp",
+    "category": "Smart Watch",
+    "price": 350,
+    "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
+    "specification": [
+      "Over-ear",
+      "Noise canceling",
+      "30 hours battery life",
+      "Bluetooth"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 9,
+    "product_title": "Dell Latitude-7400 Core-i7-8th-Gen",
+    "product_image": "https://i.ibb.co/TKvjBd4/71qh-Oji-Ci-ZL-AC-SX679.jpg",
+    "category": "Tablet",
+    "price": 600,
+    "description": "Lightweight and powerful tablet, perfect for creativity and productivity.",
+    "specification": ["10.9-inch Liquid Retina", "A15 Bionic", "64GB storage"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 10,
+    "product_title": "Anker Nano II Charger",
+    "product_image": "https://i.ibb.co/CQz0yVP/100323691-100-01.webp",
+    "category": "Charger",
+    "price": 30,
+    "description": "Compact fast charger compatible with a range of devices.",
+    "specification": [
+      "USB-C",
+      "65W",
+      "PowerIQ 3.0",
+      "Compatible with laptops and phones"
+    ],
+    "availability": true,
+    "rating": 4.8
+  }
+]
