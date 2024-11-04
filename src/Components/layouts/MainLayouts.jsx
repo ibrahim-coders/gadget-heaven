@@ -6,7 +6,7 @@ const MainLayouts = () => {
   return (
     <div>
       <NavBar />
-      <div>
+      <div className="h-auto container mx-auto">
         <Outlet />
       </div>
       <Footer />

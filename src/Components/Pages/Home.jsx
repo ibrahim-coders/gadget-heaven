@@ -15,9 +15,15 @@ const Home = () => {
           'Choose your desired coofee caegory to browse throgh specific coffees that fit in your taste'
         }
       />
-      <Outlet />
 
-      <CategoriesBtn categories={categories} />
+      <div className="flex flex-wrap">
+        <div className="w-full md:w-1/4 p-4">
+          <CategoriesBtn categories={categories} />
+        </div>
+        <div className="w-full md:w-3/4 p-4">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };

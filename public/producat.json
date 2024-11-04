@@ -30,7 +30,7 @@
     "product_id": 3,
     "product_title": "Samsung Galaxy Watch 5",
     "product_image": "https://i.ibb.co/tJjsSYH/sa-en-galaxy-watch5-44mm-sm-r910nzaamea-533187366.png",
-    "category": "Smart Watch",
+    "category": "Smart_Watch",
     "price": 300,
     "description": "Stylish smartwatch with advanced health tracking and fitness features.",
     "specification": [
@@ -46,7 +46,7 @@
     "product_id": 4,
     "product_title": "Anker PowerCore 10000",
     "product_image": "https://i.ibb.co/WDKhk2Q/66927461013d61dc110c3f79ad6ec910-hi.jpg",
-    "category": "Power Bank",
+    "category": "Power_Bank",
     "price": 25,
     "description": "Compact and lightweight 10000mAh portable charger for all your devices.",
     "specification": ["10000mAh", "USB-A output", "Fast charging"],
@@ -79,7 +79,7 @@
     "product_id": 7,
     "product_title": "Fitbit Versa 3",
     "product_image": "https://i.ibb.co/THRytPr/images.jpg",
-    "category": "Smart Watch",
+    "category": "Smart_Watch",
     "price": 229,
     "description": "Advanced smartwatch with built-in GPS, heart rate monitoring, and voice assistant.",
     "specification": [
@@ -95,7 +95,7 @@
     "product_id": 8,
     "product_title": "Sony WH-1000XM4",
     "product_image": "https://i.ibb.co/dLZ8Lt0/fitbit-versa-3-smart-watch-500x500.webp",
-    "category": "Smart Watch",
+    "category": "Smart_Watch",
     "price": 350,
     "description": "Industry-leading noise-canceling headphones with exceptional sound quality.",
     "specification": [
@@ -111,7 +111,7 @@
     "product_id": 9,
     "product_title": "Dell Latitude-7400 Core-i7-8th-Gen",
     "product_image": "https://i.ibb.co/TKvjBd4/71qh-Oji-Ci-ZL-AC-SX679.jpg",
-    "category": "Tablet",
+    "category": "Computer",
     "price": 600,
     "description": "Lightweight and powerful tablet, perfect for creativity and productivity.",
     "specification": ["10.9-inch Liquid Retina", "A15 Bionic", "64GB storage"],
@@ -133,5 +133,69 @@
     ],
     "availability": true,
     "rating": 4.8
+  },
+  {
+    "product_id": 11,
+    "product_title": "Lenovo Thinkpad",
+    "product_image": "https://i.ibb.co/598xpkB/71l-Fdrzc-Bn-L-AC-SX300-SY300-QL70-ML2.jpg",
+    "category": "Laptop",
+    "price": 1200,
+    "description": "13-inch laptop with an InfinityEdge display, offering a powerful performance.",
+    "specification": [
+      "13.3-inch FHD",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 12,
+    "product_title": "Surface Laptop Go 3",
+    "product_image": "https://i.ibb.co/drVjfMc/images-1.jpg",
+    "category": "Laptop",
+    "price": 1200,
+    "description": "13-inch laptop with an InfinityEdge display, offering a powerful performance.",
+    "specification": [
+      "13.3-inch FHD",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 13,
+    "product_title": "Microsoft Surface Laptop",
+    "product_image": "https://i.ibb.co/qn3qDwZ/surface-laptop-go-3-01-500x500.webp",
+    "category": "Laptop",
+    "price": 1200,
+    "description": "13-inch laptop with an InfinityEdge display, offering a powerful performance.",
+    "specification": [
+      "13.3-inch FHD",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 14,
+    "product_title": "dell",
+    "product_image": "https://i.ibb.co/K9vWw8K/Frame-15-2024-06-26-T143807-110.webp",
+    "category": "Laptop",
+    "price": 1200,
+    "description": "13-inch laptop with an InfinityEdge display, offering a powerful performance.",
+    "specification": [
+      "13.3-inch FHD",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7
   }
 ]

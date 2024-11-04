@@ -3,22 +3,31 @@ import MainLayouts from '../layouts/MainLayouts';
 import Home from '../Pages/Home';
 import Statistic from '../Pages/Statistic';
 import DeshBoard from '../Pages/DeshBoard';
-import Producats from '../../Producats';
+
+import AllProducats from '../../AllProducats';
+import ErrorPage from '../Pages/ErrorPage';
+import ProducatDetails from '../Pages/ProducatDetails';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayouts />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
         element: <Home />,
         loader: () => fetch('../categories.json'),
+
         children: [
           {
-            path: '/',
-            element: <Producats />,
+            path: '/category/:category',
+            element: <AllProducats />,
             loader: () => fetch('../producat.json'),
+          },
+          {
+            path: 'producat/:Id',
+            element: <ProducatDetails />,
           },
         ],
       },

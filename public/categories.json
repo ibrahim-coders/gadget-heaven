@@ -1,22 +1,27 @@
 [
   {
     "id": 1,
-    "category": "Computer",
-    "product": "desktop_computer"
+    "category": "All_Producat",
+    "product": "all"
   },
   {
-    "id": 2,
+    "id": 1,
     "category": "Laptop",
     "product": "laptop"
   },
   {
+    "id": 2,
+    "category": "Computer",
+    "product": "desktop_computer"
+  },
+  {
     "id": 3,
-    "category": "phone",
+    "category": "Phone",
     "product": "smartphone"
   },
   {
     "id": 4,
-    "category": "Smart  Watch",
+    "category": "Smart_Watch",
     "product": "fitness_smartwatch"
   },
   {
@@ -26,7 +31,7 @@
   },
   {
     "id": 6,
-    "category": "Power Bank",
+    "category": "Power_Bank",
     "product": "portable power bank"
   }
 ]
