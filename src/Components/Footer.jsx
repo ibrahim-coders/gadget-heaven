@@ -1,163 +1,57 @@
 const Footer = () => {
   return (
-    <footer className="w-full text-slate-500">
-      {/*      <!-- Main footer --> */}
-      <div className="border-t border-slate-200 bg-slate-100 pt-16 pb-12 text-sm">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center p-4 md:p-8">
-            <h2 className="text-2xl md:text-4xl font-bold text-center">
-              Gadget Heaven
-            </h2>
-            <p className="mt-2 text-lg md:text-xl text-center">
-              Leading the way in cutting-edge technology and innovation
-            </p>
-            <div className="border-t border-gray-300 w-full mt-4"></div>
-          </div>
-          <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 mx-auto">
-            <nav
-              className="col-span-2 md:col-span-4 lg:col-span-4 mx-auto"
-              aria-labelledby="footer-product-3-sub"
-            >
-              <h3
-                className="mb-6 text-base font-medium text-slate-700"
-                id="footer-product-3-sub"
-              >
-                Service
-              </h3>
-              <ul>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Producat Support
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Order Tracking
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Shipping & Delivery
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Returns
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <nav
-              className="col-span-2 md:col-span-4 lg:col-span-4"
-              aria-labelledby="footer-about-3-sub"
-            >
-              <h3
-                className="mb-6 text-base font-medium text-slate-700"
-                id="footer-about-3-sub"
-              >
-                Company
-              </h3>
-              <ul>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    About us
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Careers
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <nav
-              className="col-span-2 md:col-span-4 lg:col-span-4"
-              aria-labelledby="footer-get-in-touch-3-sub"
-            >
-              <h3
-                className="mb-6 text-base font-medium text-slate-700"
-                id="footer-get-in-touch-3-sub"
-              >
-                Legal
-              </h3>
-              <ul>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Privace Police
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Cookie Police
-                  </a>
-                </li>
-                <li className="mb-2 leading-6">
-                  <a
-                    href="javascript:void(0)"
-                    className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                  >
-                    Join research
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+    <footer className="w-full text-slate-500  border-t border-slate-200 pt-16 pb-12 text-sm">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold">Gadget Heaven</h2>
+        <p className="mt-2 text-lg md:text-xl">
+          Leading the way in cutting-edge technology and innovation
+        </p>
+        <div className="border-t border-gray-300 w-full mt-6"></div>
       </div>
-      {/*      <!-- Sub Footer --> */}
-      <div className="border-t border-slate-200 bg-slate-100 py-4 text-sm">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-4 items-center gap-6 md:grid-cols-8 lg:grid-cols-12">
-            <nav
-              className="col-span-3 md:col-span-4 lg:col-span-6"
-              aria-labelledby="subfooter-links"
-            >
-              <h3 className="sr-only" id="subfooter-links">
-                Get in touch
-              </h3>
-            </nav>
-          </div>
-        </div>
+
+      <div className="container mx-auto px-6 mt-8 flex flex-col md:flex-row md:justify-around text-center md:text-left space-y-4 md:space-y-0">
+        <nav>
+          <h6 className="font-semibold mb-2">Services</h6>
+          <a href="#" className="block hover:underline">
+            Product Support
+          </a>
+          <a href="#" className="block hover:underline">
+            Order Tracking
+          </a>
+          <a href="#" className="block hover:underline">
+            Shipping & Delivery
+          </a>
+          <a href="#" className="block hover:underline">
+            Returns
+          </a>
+        </nav>
+        <nav>
+          <h6 className="font-semibold mb-2">Company</h6>
+          <a href="#" className="block hover:underline">
+            About us
+          </a>
+          <a href="#" className="block hover:underline">
+            Contact
+          </a>
+          <a href="#" className="block hover:underline">
+            Jobs
+          </a>
+        </nav>
+        <nav>
+          <h6 className="font-semibold mb-2">Legal</h6>
+          <a href="#" className="block hover:underline">
+            Terms of use
+          </a>
+          <a href="#" className="block hover:underline">
+            Privacy policy
+          </a>
+          <a href="#" className="block hover:underline">
+            Cookie policy
+          </a>
+          <a href="#" className="block hover:underline">
+            Join research
+          </a>
+        </nav>
       </div>
     </footer>
   );
