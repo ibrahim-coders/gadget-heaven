@@ -3,7 +3,6 @@ import MainLayouts from '../layouts/MainLayouts';
 import Home from '../Pages/Home';
 import Statistic from '../Pages/Statistic';
 import DeshBoard from '../Pages/DeshBoard';
-
 import AllProducats from '../../AllProducats';
 import ErrorPage from '../Pages/ErrorPage';
 import ProducatDetails from '../Pages/ProducatDetails';
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
             element: <AllProducats />,
             loader: () => fetch('../producat.json'),
           },
-          {
-            path: 'producat/:Id',
-            element: <ProducatDetails />,
-          },
         ],
       },
 
@@ -44,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: '/deshboard',
         element: <DeshBoard />,
+      },
+      {
+        path: '/producat/:id',
+        element: <ProducatDetails />,
+        loader: () => fetch('../producat.json'),
       },
     ],
   },

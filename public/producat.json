@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "product_title": "Dell XPS 13",
-    "product_image": "https://i.ibb.co/wgWhLKM/51ukd1g6-Od-L-AC-UL480-FMwebp-QL65.webp",
+    "product_image": "https://i.ibb.co/H4X4SS8/Bora-Purple-785x.webp",
     "category": "Laptop",
     "price": 1200,
     "description": "13-inch laptop with an InfinityEdge display, offering a powerful performance.",
@@ -67,7 +67,7 @@
   {
     "product_id": 6,
     "product_title": "Samsung Galaxy S22",
-    "product_image": "https://i.ibb.co/H4X4SS8/Bora-Purple-785x.webp",
+    "product_image": "https://i.ibb.co/wgWhLKM/51ukd1g6-Od-L-AC-UL480-FMwebp-QL65.webp",
     "category": "Phone",
     "price": 850,
     "description": "Flagship Android phone with an excellent display and powerful performance.",
