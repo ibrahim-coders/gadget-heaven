@@ -6,7 +6,7 @@ import DeshBoard from '../Pages/DeshBoard';
 import AllProducats from '../../AllProducats';
 import ErrorPage from '../Pages/ErrorPage';
 import ProducatDetails from '../Pages/ProducatDetails';
-
+import Contact from '../Pages/Contact';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/deshboard',
         element: <DeshBoard />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
       },
       {
         path: '/producat/:id',

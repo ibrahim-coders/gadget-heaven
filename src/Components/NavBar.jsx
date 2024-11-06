@@ -1,26 +1,29 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FaCartShopping } from 'react-icons/fa6';
 
 const NavBar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
 
+  const location = useLocation();
+  const bgColor = location.pathname === '/' ? ' bg-violet-700 text-white' : '';
   return (
     <>
-      <header className="relative z-20 w-full border-b shadow-lg border-slate-200 bg-white/90 shadow-slate-700/5 after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
+      <header className="relative z-20 w-full  after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden ">
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
-            className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
+            className={`flex h-[5.5rem] items-center justify-between font-medium  p-4 ${bgColor}`}
             role="navigation"
           >
             {/* Brand logo */}
-            <h2 className="text-3xl font-bold text-gray-500 my-auto items-center">
+            <h2 className="text-3xl font-bold text-gray-800 my-auto items-center px-4">
               Gadget Heaven
             </h2>
 
             {/* Navigation links */}
+
             <ul
               role="menubar"
               aria-label="Select page"
@@ -34,12 +37,12 @@ const NavBar = () => {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 ${
-                      isActive ? 'text-emerald-500 font-semibold' : ''
+                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-white focus:outline-none focus-visible:outline-none lg:px-8 rounded-lg ${
+                      isActive ? 'bg-emerald-500 font-semibold text-white' : ''
                     }`
                   }
                 >
-                  <span>Home</span>
+                  <span className="text-xl font-bold">Home</span>
                 </NavLink>
               </li>
 
@@ -47,12 +50,12 @@ const NavBar = () => {
                 <NavLink
                   to="/statistic"
                   className={({ isActive }) =>
-                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 ${
-                      isActive ? 'text-emerald-500 font-semibold' : ''
+                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-white focus:outline-none focus-visible:outline-none lg:px-8 rounded-lg ${
+                      isActive ? 'bg-emerald-500 font-semibold text-white' : ''
                     }`
                   }
                 >
-                  Statistic
+                  <span className="text-xl font-bold"> Statistic</span>
                 </NavLink>
               </li>
 
@@ -60,12 +63,25 @@ const NavBar = () => {
                 <NavLink
                   to="/deshboard"
                   className={({ isActive }) =>
-                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 ${
-                      isActive ? 'text-emerald-500 font-semibold' : ''
+                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-white focus:outline-none focus-visible:outline-none lg:px-8 rounded-lg ${
+                      isActive ? 'bg-emerald-500 font-semibold text-white' : ''
                     }`
                   }
                 >
-                  Dashboard
+                  <span className="text-xl font-bold"> Dashboard</span>
+                </NavLink>
+              </li>
+
+              <li role="none" className="flex items-stretch">
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-white focus:outline-none focus-visible:outline-none lg:px-8 rounded-lg ${
+                      isActive ? 'bg-emerald-500 font-semibold text-white' : ''
+                    }`
+                  }
+                >
+                  <span className="text-xl font-bold"> Contact</span>
                 </NavLink>
               </li>
             </ul>

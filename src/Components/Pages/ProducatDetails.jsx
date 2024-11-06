@@ -4,7 +4,11 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { FaCartShopping } from 'react-icons/fa6';
 
 import { FaStar } from 'react-icons/fa';
-import { getAllProducts, handelAddProducat } from '../Utilities/Utilities';
+import {
+  getAllProducts,
+  handelAddProducat,
+  handelRemoveProducat,
+} from '../Utilities/Utilities';
 const ProductDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
@@ -23,12 +27,16 @@ const ProductDetails = () => {
   //handle add to cart
   const handelAddToCard = product => {
     handelAddProducat(product);
-    // getAllProducts();
+  };
+
+  const wishListAdd = product => {
+    handelAddProducat(product);
+    console.log(product);
   };
 
   return (
-    <div className="sm:h-[450px] md:h-[700px] w-full mx-auto items-center">
-      <div className="bg-violet-700 py-10 px-4 md:px-10 lg:px-20 text-center relative mx-auto h-[400px] ">
+    <div className=" w-full mx-auto items-center h-[750px] ">
+      <div className="bg-violet-700 py-10 px-4 md:px-10 lg:px-20 text-center  mx-auto ">
         <h2 className="text-white text-2xl md:text-3xl lg:text-5xl font-bold mb-4 max-w-screen-md mx-auto">
           Product Details
         </h2>
@@ -38,7 +46,7 @@ const ProductDetails = () => {
         </p>
       </div>
 
-      <div className=" absolute flex flex-col md:flex-row max-w-screen-md mx-auto border p-4 md:p-6 space-y-4 md:bottom-[-10%]  lg:bottom-[-30%] bg-white sm:left-[8%] md:left-[20%] items-center">
+      <div className="  flex flex-col md:flex-row max-w-screen-md mx-auto border p-4 md:p-6 space-y-4  bg-white  items-center my-8">
         {/* img */}
         <div className="flex-shrink-0">
           <img
@@ -88,7 +96,10 @@ const ProductDetails = () => {
             >
               Add to Cart <FaCartShopping className="text-2xl" />
             </button>
-            <AiOutlineHeart className="text-4xl  my-2" />
+            <AiOutlineHeart
+              onClick={() => wishListAdd(product)}
+              className="text-4xl  my-2"
+            />
           </div>
         </div>
       </div>
