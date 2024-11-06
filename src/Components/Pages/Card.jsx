@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CiTrash } from 'react-icons/ci';
 
 const Card = ({ product, removeProducat }) => {
@@ -10,7 +10,9 @@ const Card = ({ product, removeProducat }) => {
       setsort(sorted);
     }
   };
-
+  useEffect(() => {
+    document.title = 'Product | WishList';
+  }, []);
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6">

@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import { CiTrash } from 'react-icons/ci';
 
 const ProducatCards = ({ removeProducats }) => {
   console.log(removeProducats);
+  useEffect(() => {
+    document.title = 'Product | ProducatCards';
+  }, []);
   return (
     <div>
       <div className="grid grid-cols-1 gap-6 p-4">

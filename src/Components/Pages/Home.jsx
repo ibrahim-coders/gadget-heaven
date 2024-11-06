@@ -2,10 +2,13 @@ import { Outlet, useLoaderData } from 'react-router-dom';
 import Banner from './Banner';
 import Heding from './Heding';
 import CategoriesBtn from './CategoriesBtn';
+import { useEffect } from 'react';
 
 const Home = () => {
   const categories = useLoaderData();
-
+  useEffect(() => {
+    document.title = 'Gadget | Gadget Heaven';
+  }, []);
   return (
     <div className=" max-w-screen-2xl mx-auto">
       <Banner />

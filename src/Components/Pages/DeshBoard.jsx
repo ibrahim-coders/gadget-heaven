@@ -41,7 +41,9 @@ const DeshBoard = () => {
       });
     }
   };
-
+  useEffect(() => {
+    document.title = 'dashboard|Gadget';
+  }, []);
   return (
     <div>
       <div className="bg-violet-600 p-6 text-white text-center">

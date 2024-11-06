@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = 'Contact|Gadget';
+  }, []);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',

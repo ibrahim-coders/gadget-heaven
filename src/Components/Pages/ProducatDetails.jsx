@@ -33,7 +33,9 @@ const ProductDetails = () => {
     handelAddProducat(product);
     console.log(product);
   };
-
+  useEffect(() => {
+    document.title = 'ProductDetails | Gadget';
+  }, []);
   return (
     <div className=" w-full mx-auto items-center h-[750px] ">
       <div className="bg-violet-700 py-10 px-4 md:px-10 lg:px-20 text-center  mx-auto ">
