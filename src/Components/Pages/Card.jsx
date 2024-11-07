@@ -2,24 +2,25 @@ import { useEffect, useState } from 'react';
 import { CiTrash } from 'react-icons/ci';
 
 const Card = ({ product, removeProducat }) => {
+  useEffect(() => {
+    document.title = 'Product | WishList';
+  }, []);
   const [pr, setsort] = useState(product);
 
   const handelSortPrice = sort => {
     if (sort === 'price') {
-      const sorted = [...product].sort((a, b) => b.price - a.price);
+      const sorted = [...pr].sort((a, b) => b.price - a.price);
       setsort(sorted);
     }
   };
-  useEffect(() => {
-    document.title = 'Product | WishList';
-  }, []);
+
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
         <h2 className="text-xl font-semibold mb-4 md:mb-0">Card</h2>
         <div className="flex flex-col md:flex-row items-center gap-2">
           <h2 className="text-lg font-medium">
-            Price: ${product.reduce((total, p) => total + p.price, 0)}
+            Price: ${pr.reduce((total, p) => total + p.price, 0)}
           </h2>
           <button
             onClick={() => handelSortPrice('price')}

@@ -4,11 +4,7 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { FaCartShopping } from 'react-icons/fa6';
 
 import { FaStar } from 'react-icons/fa';
-import {
-  getAllProducts,
-  handelAddProducat,
-  handelRemoveProducat,
-} from '../Utilities/Utilities';
+import { handelAddProducat, handelwishList } from '../Utilities/Utilities';
 const ProductDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
@@ -24,14 +20,17 @@ const ProductDetails = () => {
 
   console.log(product);
 
+  console.log(product);
+
   //handle add to cart
   const handelAddToCard = product => {
     handelAddProducat(product);
   };
 
-  const wishListAdd = product => {
-    handelAddProducat(product);
-    console.log(product);
+  const wishListAdd = productWish => {
+    handelwishList(productWish);
+    // console.log(product);
+    // console.log(addWishListProducat);
   };
   useEffect(() => {
     document.title = 'ProductDetails | Gadget';

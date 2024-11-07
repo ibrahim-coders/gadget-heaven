@@ -17,12 +17,13 @@ const handelAddProducat = producat => {
   if (status) {
     toast.error('Product is already added!');
     return;
+  } else {
+    producats.push(producat);
+    localStorage.setItem('Producat', JSON.stringify(producats));
+    toast.success('Product added successfully!');
   }
 
   // Add new product
-  producats.push(producat);
-  localStorage.setItem('Producat', JSON.stringify(producats));
-  toast.success('Product added successfully!');
 };
 
 // Remove
@@ -34,5 +35,40 @@ const handelRemoveProducat = productId => {
   localStorage.setItem('Producat', JSON.stringify(updatedProducts));
   toast.success('Product removed successfully!');
 };
+//wishList part
+const addWishListProducat = () => {
+  const all = localStorage.getItem('WishList');
+  return all ? JSON.parse(all) : [];
+};
 
-export { handelAddProducat, getAllProducts, handelRemoveProducat };
+const handelwishList = producat => {
+  const producats = addWishListProducat();
+  const status = producats.find(
+    item => item.product_id === producat.product_id
+  );
+
+  if (status) {
+    toast.error('Product is already added!');
+  } else {
+    producats.push(producat);
+    localStorage.setItem('WishList', JSON.stringify(producats));
+    toast.success('Product added to wishlist!');
+  }
+};
+const WishListRemoveProducat = productId => {
+  const producats = addWishListProducat();
+  const updatedProducts = producats.filter(
+    item => item.product_id !== productId
+  );
+  localStorage.setItem('Producat', JSON.stringify(updatedProducts));
+  toast.success('Product removed successfully!');
+};
+
+export {
+  handelAddProducat,
+  getAllProducts,
+  handelRemoveProducat,
+  handelwishList,
+  addWishListProducat,
+  WishListRemoveProducat,
+};

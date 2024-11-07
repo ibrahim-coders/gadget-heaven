@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const MainLayouts = () => {
   return (
     <div>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-center" autoClose={3000} />
       <NavBar />
       <div className=" container mx-auto">
         <Outlet />

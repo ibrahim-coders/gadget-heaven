@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
-import { getAllProducts, handelRemoveProducat } from '../Utilities/Utilities';
+import {
+  addWishListProducat,
+  getAllProducts,
+  handelRemoveProducat,
+  WishListRemoveProducat,
+} from '../Utilities/Utilities';
 import Card from './Card';
 import ProducatCards from './ProducatCards';
 
@@ -11,16 +16,29 @@ const DeshBoard = () => {
   }, []);
   console.log(product);
 
-  const [removeProducats, removSetProduct] = useState({});
-  useEffect(() => {
-    const producats = getAllProducts();
-    removSetProduct(producats);
-  }, []);
+  // const [removeProducats, removSetProduct] = useState({});
+  // useEffect(() => {
+  //   const producats = getAllProducts();
+  //   removSetProduct(producats);
+  // }, []);
 
   console.log(product);
+
   const removeProducat = productId => {
     handelRemoveProducat(productId);
     const updatedProducts = getAllProducts();
+    setProduct(updatedProducts);
+  };
+
+  const [wishListproduct, setWishListProduct] = useState([]);
+  useEffect(() => {
+    const producats = addWishListProducat();
+    setWishListProduct(producats);
+  }, []);
+
+  const WishListremoveProducat = productId => {
+    WishListRemoveProducat(productId);
+    const updatedProducts = addWishListProducat();
     setProduct(updatedProducts);
   };
   const [activeBtn, setButton] = useState({
@@ -81,7 +99,10 @@ const DeshBoard = () => {
         {activeBtn.status === 'available' ? (
           <Card product={product} removeProducat={removeProducat} />
         ) : (
-          <ProducatCards removeProducats={removeProducats} />
+          <ProducatCards
+            wishListproduct={wishListproduct}
+            WishListremoveProducat={WishListremoveProducat}
+          />
         )}
       </div>
     </div>
